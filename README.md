@@ -10,6 +10,21 @@ no Shizuku** needed at runtime.
 > Built and tested on a **Pixel 10 Pro Fold** (Android 16). The same approach should work on
 > other rooted Pixels; the China‑Telecom matching is by `mcc=460` on physical SIM slot 0.
 
+## Use case: China Telecom + T‑Mobile together, **no Wi‑Fi needed**
+
+Run a **China Telecom SIM and a T‑Mobile eSIM at the same time** on one rooted Pixel:
+
+- **China Telecom** — your data SIM: 5G‑SA mobile data **plus its own VoLTE / VoNR voice &
+  video** (the part this module fixes and keeps working across reboots).
+- **T‑Mobile** — kept reachable on its own number via **Wi‑Fi Calling carried over China
+  Telecom's mobile data** (cross‑SIM calling, a.k.a. *Call over other SIM* / "备用通话").
+  **No Wi‑Fi network is required** — T‑Mobile's IMS rides China Telecom's data path, so you can
+  use T‑Mobile calling on cellular data alone, instead of T‑Mobile roaming on a local network.
+
+Enable T‑Mobile cross‑SIM calling with the Magisk **Action** button. It is *best‑effort* on this
+device (engages while T‑Mobile has no cellular service, e.g. right after boot) — see
+[Notes & limitations](#notes--limitations).
+
 ## Why this exists
 
 The usual fix ([carrier‑ims‑for‑pixel](https://github.com/ryfineZ/carrier-ims-for-pixel) /

@@ -9,6 +9,19 @@ VoLTE / VoNR / VoWiFi / 视频通话 运营商配置(carrier‑config),让已 ro
 > 在 **Pixel 10 Pro Fold**(Android 16)上构建并测试。该思路对其它已 root 的 Pixel 同样适用;
 > 中国电信卡是按**物理 SIM 槽 0、`mcc=460`** 匹配的。
 
+## 适用场景:电信 + T‑Mobile 同时使用,**无需连 Wi‑Fi**
+
+在一台已 root 的 Pixel 上**同时使用一张中国电信卡 + 一张 T‑Mobile eSIM**:
+
+- **中国电信** —— 你的数据卡:5G‑SA 移动流量,**外加它自己的 VoLTE / VoNR 语音和视频**
+  (本模块修复并保证重启后持续可用)。
+- **T‑Mobile** —— 通过**走中国电信流量的 Wi‑Fi 通话**(跨 SIM 通话,即 *Call over other SIM* /
+  「备用通话」)保持本号可用。**无需连接任何 Wi‑Fi** —— T‑Mobile 的 IMS 直接借用电信的移动数据通路,
+  于是你只靠蜂窝流量就能用 T‑Mobile 打电话,而不必让 T‑Mobile 漫游到本地网络。
+
+用 Magisk **Action** 按钮启用 T‑Mobile 跨 SIM 通话。本设备上为*尽力而为*
+(在 T‑Mobile 没有蜂窝服务时挂上,例如刚开机那会儿)—— 详见「说明与限制」。
+
 ## 为什么需要它
 
 常见的修复方式([carrier‑ims‑for‑pixel](https://github.com/ryfineZ/carrier-ims-for-pixel) /
