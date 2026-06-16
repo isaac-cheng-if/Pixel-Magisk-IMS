@@ -1,0 +1,6 @@
+id=ct_ims_autoinject
+name=China Telecom IMS Auto-Inject
+version=v2.3
+versionCode=6
+author=ifchy
+description=Boot: re-applies China Telecom (中国电信) VoLTE/VoNR/VoWiFi/VT carrier-config + restarts IMS (headless, root, no app needed) — CT SIM1 only, never auto-touches T-Mobile. Tap "Action" to manually enable T-Mobile cross-SIM calling (备用通话) over CT data (sets crossSimCallingEnabled=1 + WFC, no cellular block).

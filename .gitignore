@@ -1,0 +1,20 @@
+# OS
+.DS_Store
+
+# Build output (rebuild via build/build_in_docker.sh)
+build/classes/
+build/classes.dex
+
+# Throwaway dev/install scratch scripts (not part of the module)
+build/install2.sh
+build/install3.sh
+build/install_on_device.sh
+build/reinstall.sh
+build/fix_companion.sh
+build/inst4.sh
+build/svc.sh
+build/svc2.sh
+build/svc3.sh
+
+# Logs
+*.log
