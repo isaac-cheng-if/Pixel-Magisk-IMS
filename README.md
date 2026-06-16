@@ -1,5 +1,7 @@
 # Pixel‑Magisk‑IMS
 
+**English** | [简体中文](README.zh-CN.md)
+
 A self‑contained **Magisk module** that re‑applies the **China Telecom (中国电信)**
 VoLTE / VoNR / VoWiFi / Video‑Telephony carrier‑config override on **every boot**, so a
 rooted Pixel keeps working 5G‑SA voice and video on a China Telecom SIM — with **no app and
