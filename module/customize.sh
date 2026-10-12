@@ -2,7 +2,7 @@
 # Magisk install-time customize script.
 
 ui_print "- China Telecom IMS Auto-Inject"
-ui_print "- Re-applies VoLTE/VoNR/VoWiFi carrier-config on every boot"
+ui_print "- Re-applies VoLTE/VoNR/VT carrier-config on every boot"
 
 # make sure the injector + service are present
 if [ ! -f "$MODPATH/injector.dex" ]; then

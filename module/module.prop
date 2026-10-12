@@ -1,6 +1,6 @@
 id=ct_ims_autoinject
 name=China Telecom IMS Auto-Inject
-version=v2.3
-versionCode=6
+version=v2.4
+versionCode=7
 author=ifchy
-description=Boot: re-applies China Telecom (中国电信) VoLTE/VoNR/VoWiFi/VT carrier-config + restarts IMS (headless, root, no app needed) — CT SIM1 only, never auto-touches T-Mobile. Tap "Action" to manually enable T-Mobile cross-SIM calling (备用通话) over CT data (sets crossSimCallingEnabled=1 + WFC, no cellular block).
+description=Boot: re-applies China Telecom (中国电信) VoLTE/VoNR/VT carrier-config (VoWiFi off) + restarts IMS (headless, root). Then T-Mobile eSIM -> Wi-Fi Calling / 备用通话 only in China: cross-SIM calling over CT data + manual home-PLMN selection so it never roams on CMCC/CU (auto selection restored outside China). Action re-applies it.
